@@ -1,0 +1,26 @@
+[project]
+name = "online_options_pricing_app"
+version = "0.1.0"
+description = "Online options pricing application. Call/Put options can be priced using the Black-Scholes pricing model or the Cox-Ross-Rubinstein (Binomial) model. Both call and put greeks are computed live for each pricing models."
+authors = [
+    {name = "Lars del Bubba",email = "larsdb98@gmail.com"}
+]
+license = {text = "MIT License"}
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "numpy (>=2.3.2,<3.0.0)",
+    "pydantic (>=2.11.7,<3.0.0)",
+    "panel (>=1.7.5,<2.0.0)",
+    "plotly (>=6.3.0,<7.0.0)",
+    "scipy (>=1.16.1,<2.0.0)",
+    "pandas (>=2.3.2,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts] # entry point(s) for apps 
+options = "online_options_pricing_app.main:main"

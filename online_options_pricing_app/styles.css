@@ -1,0 +1,115 @@
+/* page background & base text */
+body {
+    background: #0b1220;
+    color: #dbeafe;
+    font-family: Inter, "Segoe UI", Roboto, sans-serif;
+}
+
+/* left input panel */
+.side-panel {
+    background: #071028;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.6);
+}
+
+/* right results panel */
+.results-panel {
+    background: #071022;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.6);
+}
+
+/* titles / headings */
+.app-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #e6f5ff;
+    margin-bottom: 6px;
+}
+
+.app-sub {
+    color: #9fb4c9;
+    margin-bottom: 12px;
+}
+
+/* output text styles */
+.price-text {
+    font-size: 15px;
+    color: #7ee3f6;
+    margin-bottom: 6px;
+}
+
+.input-text {
+    font-size: 15px;
+    color: #cdeef7;
+    margin-top: 3px;
+    margin-bottom: -3px;
+}
+
+.greeks-text {
+    font-size: 13px;
+    color: #cdeef7;
+    margin-bottom: 8px;
+}
+
+.call-price-card {
+    background-color: #1f9751;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.put-price-card {
+    background-color: #147882;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.greeks-table {
+    background-color: #0b1220;
+    /* 1e1e1e */
+    color: white;
+    padding: 15px;
+    border-style: solid;
+    border-color: #1e3158;
+    border-radius: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* tune bokeh button look (Panel uses Bokeh widgets) */
+.bk-btn.custom-toggle {
+    background-color: #10b981 !important;
+    color: white !important;
+    /* #001010 */
+    border-radius: 6px !important;
+    padding: 6px 12px !important;
+}
+
+.bk-btn.custom-toggle.hover {
+    background-color: #13e59f !important;
+    color: white !important;
+}
+
+.bk-btn.custom-toggle.active {
+    background-color: rgb(13, 59, 27) !important;
+    color: white !important;
+}
+
+/* small responsive tweak, thank chatgpt lol */
+@media (max-width: 900px) {
+
+    .bk-root .bk-side-panel,
+    .bk-root .bk-results-panel {
+        width: 100% !important;
+    }
+}
